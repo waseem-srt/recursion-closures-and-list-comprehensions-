@@ -1,0 +1,5 @@
+def mystery(n):
+    return (lambda f: f(f, n))(lambda self, x: x if x < 2 else self(self, x-1) + self(self, x-2))
+
+nums = [mystery(i) for i in range(15)]
+print(nums)
