@@ -3,5 +3,5 @@ def mystery(n):
 nums = [mystery(i) for i in range(15)]
 print(nums)
 
-
+...
 >>>>>>>>>>
